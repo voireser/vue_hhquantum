@@ -33,24 +33,32 @@ export default {
             swiperOption: {
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true
+                    clickable: true,
+                    dynamicBullets: true,
+                    dynamicMainBullets: 2
                 },
                 slidesPerView : 0,
-                autoplay: 10000,
+                autoplay: {
+                    delay: 5000
+                },
                 loop : true
             }
         }
     },
     created: function() {
+        var optionNum = 0;
         if (window.innerWidth >= 1200) {
-            this.swiperOption.slidesPerView = 6;
+            optionNum = 6
         } else if (window.innerWidth < 1199 && window.innerWidth >= 992) { 
-            this.swiperOption.slidesPerView = 4;
+            optionNum = 4
         } else if (window.innerWidth < 991 && window.innerWidth >= 768) {
-            this.swiperOption.slidesPerView = 3;
+            optionNum = 3
         } else if (window.innerWidth < 767) {
-            this.swiperOption.slidesPerView = 2;
+            optionNum = 2
         };
+
+        this.swiperOption.slidesPerView = optionNum;
+        this.swiperOption.pagination.dynamicMainBullets = optionNum;
     },
     components: { swiper, swiperSlide }
 }

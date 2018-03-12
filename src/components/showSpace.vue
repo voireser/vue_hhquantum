@@ -4,11 +4,11 @@
             <div>
                 <p v-if="showInfo.title">{{showInfo.word_1}}</p>
                 <p v-if="showInfo.title" v-html="showInfo.word_2"></p>
-                <p v-if="showInfo.title && showInfo.more" class="more"><a href="2_us.html">了解更多</a></p>
+                <p v-if="showInfo.title && showInfo.more" class="more"><a href="javascript:" @click="pageInnerUrl(showInfo.urlFor)">了解更多</a></p>
             </div>
-            <numCount v-if="pageIndexForShow === 0 && showInfo.id === 0" :scrollNumForShow="scrollNumForShow"></numCount>
-            <threeBg v-if="pageIndexForShow === 0 && showInfo.id === 1" :scrollNumForShow="scrollNumForShow"></threeBg>
-            <caseWindow v-if="pageIndexForShow === 0 && showInfo.id === 2"></caseWindow>
+            <numCount v-if="pageIndexForShow === 0 && showInfo.id === 0" :scrollNumForShow="scrollNumForShow" :pageInnerUrl="pageInnerUrl"></numCount>
+            <threeBg v-if="pageIndexForShow === 0 && showInfo.id === 1" :scrollNumForShow="scrollNumForShow" @pageInnerUrl="pageInnerUrl"></threeBg>
+            <caseWindow v-if="pageIndexForShow === 0 && showInfo.id === 2" @pageInnerUrl="pageInnerUrl"></caseWindow>
             <logoSpace v-if="pageIndexForShow === 0 && showInfo.id === 3"></logoSpace>
 
             <leftText v-if="pageIndexForShow === 1 && showInfo.id === 4" :pageIndexForShow="pageIndexForShow"></leftText>
@@ -65,9 +65,9 @@ export default {
     data: function() {
         var showCacheInfos = {
             showCacheInfo_0: [
-                {id: 0, bg: '', title: true, more: true, word_1: '我们的愿景', word_2: '推动生活环境的可持续发展，创造更健康的人居环境，打造您私属的环境管家'},
+                {id: 0, urlFor: 1, bg: '', title: true, more: true, word_1: '我们的愿景', word_2: '推动生活环境的可持续发展，创造更健康的人居环境，打造您私属的环境管家'},
                 {id: 1, bg: 'greyBg', title: true, more: false, word_1: '为什么选择我们', word_2: '我们致力于为家庭和社会提供健康人居环境咨询服务与行业综合一站式解决方案'},
-                {id: 2, bg: '', title: true, more: true, word_1: '我们的案例', word_2: '弘辉量子服务团队为数家光触媒企业提供施工服务'},
+                {id: 2, urlFor: 4, bg: '', title: true, more: true, word_1: '我们的案例', word_2: '弘辉量子服务团队为数家光触媒企业提供施工服务'},
                 {id: 3, bg: 'greyBg', title: true, more: false, word_1: '我们的合作伙伴', word_2: '弘辉量子服务团队为数家光触媒企业提供施工服务'},
             ],
             showCacheInfo_1: [
@@ -107,6 +107,13 @@ export default {
         },
         scrollNumForShow: function() {
             return this.scrollNum
+        }
+    },
+    methods: {
+        pageInnerUrl: function(index) {
+            this.$emit('pageInnerUrl', index)
+            document.documentElement.scrollTop = 0
+            sessionStorage.setItem("pageIndex", index); 
         }
     },
     components: {

@@ -36,20 +36,23 @@ export default {
         }
     },
     mounted: function() {
-        var self = this;
-        var scrollCacheFn = setInterval(function() {
-            var scrollCache = 
-                document.getElementsByClassName('pageTop')[0].offsetHeight + 
-                document.getElementsByClassName('banner')[0].offsetHeight + 
-                document.getElementsByClassName('numCount')[0].offsetTop - 
-                window.innerHeight
-            if(self.scrollTo === scrollCache) {
-                clearInterval(scrollCacheFn)
-            } else {
-                self.scrollTo = scrollCache
-            }
-        }, 100)
-        this.scrollCacheFn;
+        var pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
+        if(pageIndex == 0 || pageIndex == 1) {
+            var self = this;
+            var scrollCacheFn = setInterval(function() {
+                var scrollCache = 
+                    document.getElementsByClassName('pageTop')[0].offsetHeight + 
+                    document.getElementsByClassName('banner')[0].offsetHeight + 
+                    document.getElementsByClassName('numCount')[0].offsetTop - 
+                    window.innerHeight
+                if(self.scrollTo === scrollCache) {
+                    clearInterval(scrollCacheFn)
+                } else {
+                    self.scrollTo = scrollCache
+                }
+            }, 1000)
+            this.scrollCacheFn;
+        }
     },
     components: { countTo }
 }

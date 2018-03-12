@@ -74,7 +74,6 @@ export default {
     },
     computed: {
         countryUse: function() {
-            console.log(1)
             if(this.countryNum === 1) { return this.country.japanese
             } else if (this.countryNum === 2) { return this.country.chinese
             }
@@ -82,10 +81,13 @@ export default {
     },
     methods: {
         show(index) {
-            if(index === 1) { this.countryNum = 1
-            } else if (index === 2) { this.countryNum = 2
+            if(index === 1) { 
+                this.countryNum = 1
+                this.$modal.show('productionPaper');
+            } else if (index === 2) { 
+                this.countryNum = 2
+                this.$modal.show('productionPaper');
             }
-            this.$modal.show('productionPaper');
         },
         hide() {
             this.$modal.hide('productionPaper');

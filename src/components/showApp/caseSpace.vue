@@ -17,16 +17,19 @@
             </div>
         
             <isotope :list="caseInfos" :options='option'>
-                <div class="filtr-item" v-for="caseInfo in caseInfos" @click="selected = caseInfo" :key="caseInfo.id" :id="caseInfo.id">
-                    <a href="javascript:" @click="show(caseInfo.id)">
-                        <img class="img-responsive" :src="caseInfo.titlePic">
-                        <p>{{caseInfo.title}}</p>
-                        <p>
-                            {{caseInfo.class === 'build' ? '总治理面积：' : '车辆类型：'}}
-                            <span v-html="caseInfo.result"></span>
-                        </p>
-                    </a>
-                </div>
+                <a 
+                    href="javascript:" 
+                    @click="show(caseInfo.id)"
+                    v-for="caseInfo in caseInfos" 
+                    :key="caseInfo.id" 
+                    :id="caseInfo.id">
+                    <img class="img-responsive" :src="caseInfo.titlePic">
+                    <p>{{caseInfo.title}}</p>
+                    <p>
+                        {{caseInfo.class === 'build' ? '总治理面积：' : '车辆类型：'}}
+                        <span v-html="caseInfo.result"></span>
+                    </p>
+                </a>
             </isotope>
         </div>
         <modal name="casePic"
@@ -149,28 +152,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-    @media (max-width: 767px) {
-        .item { width: 100% }
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-        .item { width: 30% }
-        .item:nth-child(3n-1) { margin-left: 5% !important; margin-right: -5% !important }
-        .item:nth-child(3n) { margin-left: 10% !important; margin-right: -10% !important }
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        .item { width: 30% }
-        .item:nth-child(3n-1) { margin-left: 5% !important; margin-right: -5% !important }
-        .item:nth-child(3n) { margin-left: 10% !important; margin-right: -10% !important }
-    }
-    @media (min-width: 1200px) {
-        .item { width: 30% }
-        .item:nth-child(3n-1) { margin-left: 5% !important; margin-right: -5% !important }
-        .item:nth-child(3n) { margin-left: 10% !important; margin-right: -10% !important }
-    }
-    .item {
-        height: auto;
-        margin-bottom: 1rem;
-        position relative
-        box-sizing: border-box;
-    }
+    
 </style>

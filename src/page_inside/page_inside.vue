@@ -1,8 +1,8 @@
 <template>
-  <div id="page" :class="{ index: pageIndex === 0, '': scrollNum }">
+  <div id="page_inside" :class="{ index: pageIndex === 0, '': scrollNum }">
     <pageHeader :pageIndex="pageIndex" :pageInfos="pageInfos" @change="getIndex"></pageHeader>
-    <banner :pageInfoOne="pageInfoOne" :scrollNum="scrollNum"></banner>
-    <showSpace :pageIndex="pageIndex" :scrollNum="scrollNum"></showSpace>
+    <banner :pageIndex="pageIndex" :scrollNum="scrollNum"></banner>
+    <showSpace :pageIndex="pageIndex" :scrollNum="scrollNum" @pageInnerUrl="getIndex"></showSpace>
     <connect v-if="pageIndex !== 0" :scrollNum="scrollNum"></connect>
     <pageFooter></pageFooter>
   </div>
@@ -20,19 +20,17 @@ export default {
         return{
             pageIndex: 0,
             pageInfos: [],
-            pageInfoOne: {},
             scrollNum: 0
         }
     },
     methods: {
         getIndex: function(index) {
             this.pageIndex = index
-            this.pageInfoOne = this.pageInfos[index]
         },
         getData: function() {
             this.axios.get('/static/data.json').then((response) => {
                 this.pageInfos = response.data
-                this.pageInfoOne = this.pageInfos[0]
+                this.pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
             })
         },
         watchScroll: function() {

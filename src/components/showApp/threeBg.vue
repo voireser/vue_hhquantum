@@ -4,7 +4,7 @@
             <div>
                 <p>{{threeBg.word_1}}</p>
                 <p>{{threeBg.word_2}}</p>
-                <p class="more"><a href="4_service.html">了解更多</a></p>
+                <p class="more"><a href="javascript:" @click="pageInnerUrl(3)">了解更多</a></p>
             </div>
         </div>
     </div>
@@ -29,22 +29,32 @@ export default {
         }
     },
     mounted: function() {
-        var self = this;
-        var scrollCacheFn = setInterval(function() {
-            var scrollCache = 
-                document.getElementsByClassName('pageTop')[0].offsetHeight + 
-                document.getElementsByClassName('banner')[0].offsetHeight + 
-                document.getElementsByClassName('showSpace')[0].offsetHeight + 
-                document.getElementsByClassName('threeBg')[0].offsetTop - 
-                window.innerHeight
-            if(self.scrollTo === scrollCache) {
-                clearInterval(scrollCacheFn)
-            } else {
-                self.scrollTo = scrollCache
-            }
-        }, 100)
-        this.scrollCacheFn;
+        var pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
+        if(pageIndex === 0) {
+            var self = this;
+            var scrollCacheFn = setInterval(function() {
+                var scrollCache = 
+                    document.getElementsByClassName('pageTop')[0].offsetHeight + 
+                    document.getElementsByClassName('banner')[0].offsetHeight + 
+                    document.getElementsByClassName('showSpace')[0].offsetHeight + 
+                    document.getElementsByClassName('threeBg')[0].offsetTop - 
+                    window.innerHeight
+                if(self.scrollTo === scrollCache) {
+                    clearInterval(scrollCacheFn)
+                } else {
+                    self.scrollTo = scrollCache
+                }
+            }, 1000)
+            this.scrollCacheFn;
+        }
     },
+    methods: {
+        pageInnerUrl: function(index) {
+            this.$emit('pageInnerUrl', index)
+            document.documentElement.scrollTop = 0
+            sessionStorage.setItem("pageIndex", index); 
+        }
+    }
 }
 </script>
 

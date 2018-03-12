@@ -33,23 +33,26 @@ export default {
         }
     },
     mounted: function() {
-        var self = this;
-        var scrollCacheFn = setInterval(function() {
-            var scrollCache = 
-                document.getElementsByClassName('pageTop')[0].offsetHeight + 
-                document.getElementsByClassName('banner')[0].offsetHeight + 
-                document.getElementsByClassName('showSpace')[0].offsetHeight + 
-                document.getElementsByClassName('showSpace')[1].offsetHeight + 
-                document.getElementsByClassName('showSpace')[2].offsetHeight + 
-                document.getElementsByClassName('fourPoint')[0].offsetTop - 
-                window.innerHeight
-            if(self.scrollTo === scrollCache) {
-                clearInterval(scrollCacheFn)
-            } else {
-                self.scrollTo = scrollCache
-            }
-        }, 100)
-        this.scrollCacheFn;
+        var pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
+        if(pageIndex == 2) {
+            var self = this;
+            var scrollCacheFn = setInterval(function() {
+                var scrollCache = 
+                    document.getElementsByClassName('pageTop')[0].offsetHeight + 
+                    document.getElementsByClassName('banner')[0].offsetHeight + 
+                    document.getElementsByClassName('showSpace')[0].offsetHeight + 
+                    document.getElementsByClassName('showSpace')[1].offsetHeight + 
+                    document.getElementsByClassName('showSpace')[2].offsetHeight + 
+                    document.getElementsByClassName('fourPoint')[0].offsetTop - 
+                    window.innerHeight
+                if(self.scrollTo === scrollCache) {
+                    clearInterval(scrollCacheFn)
+                } else {
+                    self.scrollTo = scrollCache
+                }
+            }, 1000)
+            this.scrollCacheFn;
+        }
     },
 }
 </script>
