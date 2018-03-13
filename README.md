@@ -2,6 +2,8 @@
 
 > A production by Vue for HonghuiTuantum
 
+[View](https://voireser.github.io/vue_hhquantum/production/)
+
 ## Build Setup
 
 ``` bash
