@@ -3,7 +3,7 @@
         <div v-for="fourPoint in fourPoints" :key="fourPoint.id">
             <div>
                 <i class="iconfont" v-html="fourPoint.icon"></i>
-                <img class="img-responsive" src="/static/img/title_2.png">
+                <img class="img-responsive" src="../../../static/img/title_2.png">
                 <div>
                     <p>{{fourPoint.No}}</p>
                     <p v-html="fourPoint.word"></p>

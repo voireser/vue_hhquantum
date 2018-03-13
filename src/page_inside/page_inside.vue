@@ -28,7 +28,7 @@ export default {
             this.pageIndex = index
         },
         getData: function() {
-            this.axios.get('/static/data.json').then((response) => {
+            this.axios.get('./static/data.json').then((response) => {
                 this.pageInfos = response.data
                 this.pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
             })

@@ -93,7 +93,7 @@ export default {
     methods: {
         getData: function() {
             var self = this
-            this.axios.get('/static/case.json').then((response) => {
+            this.axios.get('./static/case.json').then((response) => {
                 this.caseInfos = this.caseCacheInfos = response.data
 
                 var categoryArr = [];

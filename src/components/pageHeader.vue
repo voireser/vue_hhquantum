@@ -2,7 +2,7 @@
     <nav class="pageTop"> 
         <div> 
             <div class="logoArea"> 
-                <a href="index.html"><img class="img-responsive" :src="pageIndex === -1 ? '/static/img/logo_w.png' : '/static/img/logo.png'"></a> 
+                <a href="index.html"><img class="img-responsive" :src="pageIndex === -1 ? './static/img/logo_w.png' : './static/img/logo.png'"></a> 
                 <p><i class="iconfont">&#xe64e;</i>4000-328-806</p> 
             </div>
             <div class="navigation">

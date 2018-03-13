@@ -2,7 +2,7 @@
     <div>
         <div class="footer">
             <div>
-                <a href="index.html"><img class="img-responsive" src="/static/img/logo_w.png"></a>
+                <a href="index.html"><img class="img-responsive" src="../../static/img/logo_w.png"></a>
                 <div class="navigation">
                     <p><i class="iconfont">&#xe64b;</i>{{footerInfo.word_1}}</p>
                     <p><i class="iconfont">&#xe64e;</i>{{footerInfo.word_2}}</p>

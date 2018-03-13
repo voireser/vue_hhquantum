@@ -1,6 +1,6 @@
 var usBanner = new Image();
 var oHtml = document.getElementsByTagName("html")[0];
-usBanner.src="/static/img/usBanner_1.jpg";
+usBanner.src="./static/img/usBanner_1.jpg";
 
 ;(function(main) {
     var args = {};

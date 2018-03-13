@@ -37,10 +37,10 @@ export default {
             pageIndex: -1,
             pageInfos: [],
             indexInfos: [
-                {href: 0, url: 'url(/static/img/usBanner_1.jpg)', word_1: '弘辉量子', word_2: '健康人居环境咨询服务与行业综合一站式解决方案'},
-                {href: 2, url: 'url(/static/img/techBanner_1.jpg)', word_1: '核心技术', word_2: '食品级安全技术，给您最放心的保护'},
-                {href: 2, url: 'url(/static/img/whyBanner_1.jpg)', word_1: '权威保证', word_2: '多重权威认证，行于行业前列'},
-                {href: 3, url: 'url(/static/img/serviceBanner_1.jpg)', word_1: '专业化团队', word_2: '覆盖全国20多个一二线城市'},
+                {href: 0, url: 'url(./static/img/usBanner_1.jpg)', word_1: '弘辉量子', word_2: '健康人居环境咨询服务与行业综合一站式解决方案'},
+                {href: 2, url: 'url(./static/img/techBanner_1.jpg)', word_1: '核心技术', word_2: '食品级安全技术，给您最放心的保护'},
+                {href: 2, url: 'url(./static/img/whyBanner_1.jpg)', word_1: '权威保证', word_2: '多重权威认证，行于行业前列'},
+                {href: 3, url: 'url(./static/img/serviceBanner_1.jpg)', word_1: '专业化团队', word_2: '覆盖全国20多个一二线城市'},
             ],
             ready: false,
             boomable: true, 
@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         getData: function() {
-            this.axios.get('/static/data.json').then((response) => {
+            this.axios.get('./static/data.json').then((response) => {
                 this.pageInfos = response.data
             })
         },

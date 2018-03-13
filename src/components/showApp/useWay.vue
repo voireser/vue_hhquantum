@@ -23,7 +23,7 @@ export default {
     },
     data: function() {
         return {
-            src: '/static/img/techBanner_2.jpg',
+            src: './static/img/techBanner_2.jpg',
             useWays: [
                 { id: 0, icon: '&#xe638;', word_1: '商业', word_2: '商务&办公：写字楼、酒店、公寓<br>娱乐&休闲：会所、餐厅、便利店、电影院、KTV、健身房' },
                 { id: 1, icon: '&#xe648;', word_1: '企业', word_2: '养殖：畜牧、家禽、水产<br>生产&医药：医疗设备、日化、纺织、食品<br>合作：光触媒技术产品合作<br>物流&仓储：冷链、仓库' },

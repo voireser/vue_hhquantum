@@ -59,14 +59,14 @@ export default {
             },
             country: {
                 japanese: [
-                    { src: '/static/img/techPic_1.jpg' },
-                    { src: '/static/img/techPic_2.jpg' }
+                    { src: './static/img/techPic_1.jpg' },
+                    { src: './static/img/techPic_2.jpg' }
                 ],
                 chinese: [
-                    { src: '/static/img/techPic_3.jpg' }, 
-                    { src: '/static/img/techPic_4.jpg' }, 
-                    { src: '/static/img/techPic_5.jpg' }, 
-                    { src: '/static/img/techPic_6.jpg' }
+                    { src: './static/img/techPic_3.jpg' }, 
+                    { src: './static/img/techPic_4.jpg' }, 
+                    { src: './static/img/techPic_5.jpg' }, 
+                    { src: './static/img/techPic_6.jpg' }
                 ]
             },
             countryNum: 0, adaptive: true

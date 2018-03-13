@@ -35,7 +35,7 @@ export default {
     data: function() {
         return {
             connectInfo: {
-                bg: '/static/img/footerPic.jpg', 
+                bg: './static/img/footerPic.jpg', 
                 word_1: '您的生活安全正受到威胁', 
                 word_2: '请联系我们', 
                 word_3: '4000-328-806',
