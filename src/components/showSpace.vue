@@ -3,7 +3,11 @@
         <div class="showSpace" v-for="showInfo in showInfos" :key="showInfo.id" :class="showInfo.bg">
             <div>
                 <p v-if="showInfo.title">{{showInfo.word_1}}</p>
-                <p v-if="showInfo.title" v-html="showInfo.word_2"></p>
+                <p v-if="showInfo.title">
+                    {{showInfo.word_2}}
+                    <br v-if="showInfo.urlFor === 5">
+                    <a v-if="showInfo.urlFor === 5" href="javascript:" @click="pageInnerUrl(showInfo.urlFor)">什么是光催化剂技术？</a>
+                </p>
                 <p v-if="showInfo.title && showInfo.more" class="more"><a href="javascript:" @click="pageInnerUrl(showInfo.urlFor)">了解更多</a></p>
             </div>
             <numCount v-if="pageIndexForShow === 0 && showInfo.id === 0" :scrollNumForShow="scrollNumForShow" :pageInnerUrl="pageInnerUrl"></numCount>
@@ -30,6 +34,9 @@
             <showFour v-if="pageIndexForShow === 3 && showInfo.id === 18" :returnId="2"></showFour>
 
             <caseSpace v-if="pageIndexForShow === 4 && showInfo.id === 19"></caseSpace>
+
+            <showPic v-if="pageIndexForShow === 5 && showInfo.id === 20" :returnId="0"></showPic>
+            <showPic v-if="pageIndexForShow === 5 && showInfo.id === 21" :returnId="1"></showPic>
         </div>
     </div>
 </template>
@@ -50,6 +57,7 @@ import process from './showApp/process.vue'
 import showThree from './showApp/showThree.vue'
 import showFour from './showApp/showFour.vue'
 import caseSpace from './showApp/caseSpace.vue'
+import showPic from './showApp/showPic.vue'
 
 export default {
     props: {
@@ -77,7 +85,7 @@ export default {
                 {id: 7, bg: '', title: true, more: false, word_1: '我们的合作伙伴', word_2: '弘辉量子服务团队为数家光触媒企业提供施工服务'},
             ],
             showCacheInfo_2: [
-                {id: 8, bg: '', title: true, more: false, word_1: '光催化剂技术权威认证', word_2: '<span>最权威光触媒产品认证标准，确保品质</span><br><a href="3.5_why.html">什么是光催化剂技术？</a>'},
+                {id: 8, urlFor: 5, bg: '', title: true, more: false, word_1: '光催化剂技术权威认证', word_2: '最权威光触媒产品认证标准，确保品质'},
                 {id: 9, bg: 'greyBg', title: true, more: false, word_1: '我们的产品', word_2: '作为行业内产品线最全的企业，公司已拥有了内装型车用型、外墙型、陶瓷型、多用途型和制成品<br>三大门类五个系列的全产品覆盖，产品涉及应用领域广泛'},
                 {id: 10, bg: '', title: false},
                 {id: 11, bg: '', title: true, more: false, word_1: '四大功效', word_2: '最权威光触媒产品，确保品质'},
@@ -93,6 +101,10 @@ export default {
             ],
             showCacheInfo_4: [
                 {id: 19, bg: '', title: false},
+            ],
+            showCacheInfo_5: [
+                {id: 20, bg: '', title: true, more: false, word_1: '反应原理', word_2: '以半导体的能带理论作为基础'},
+                {id: 21, bg: 'greyBg', title: true, more: false, word_1: '仿光合作用', word_2: '可见光作用下催化分解有害气体，生成二氧化碳和水'},
             ]
         }
         return { 
@@ -118,7 +130,7 @@ export default {
     },
     components: {
         numCount, threeBg, caseWindow, logoSpace, leftText, wish, listThree, listFour, 
-        useWay, fourPoint, fivePoint, process, showThree, showFour, caseSpace
+        useWay, fourPoint, fivePoint, process, showThree, showFour, caseSpace, showPic
     }
 }
 </script>

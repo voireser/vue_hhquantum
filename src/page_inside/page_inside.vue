@@ -1,5 +1,5 @@
 <template>
-  <div id="page_inside" :class="{ index: pageIndex === 0, '': scrollNum }">
+  <div id="page_inside" :class="{ index: pageIndex === 0, why: pageIndex === 5, '': scrollNum }">
     <pageHeader :pageIndex="pageIndex" :pageInfos="pageInfos" @change="getIndex"></pageHeader>
     <banner :pageIndex="pageIndex" :scrollNum="scrollNum"></banner>
     <showSpace :pageIndex="pageIndex" :scrollNum="scrollNum" @pageInnerUrl="getIndex"></showSpace>
