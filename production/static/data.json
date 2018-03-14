@@ -38,5 +38,13 @@
         "bannerWord_1": "我们的案例", 
         "bannerWord_2": "完成全国500多个服务项目", 
         "bannerWord_3": "覆盖全国20多个一二线城市"
+    },
+    {
+        "id": 5, 
+        "name": "原理", 
+        "bg": "./static/img/whyBanner_1.jpg", 
+        "bannerWord_1": "光催化技术", 
+        "bannerWord_2": "纳米保护层", 
+        "bannerWord_3": "标本兼治，一步到位"
     }
 ]
