@@ -46,9 +46,6 @@ export default {
             boomable: true, 
             swiperOption: {
                 effect : 'fade',
-                autoplay: {
-                    delay: 10000
-                }
             }
         }
     },

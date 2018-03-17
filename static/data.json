@@ -1,7 +1,7 @@
 [
     {
         "id": 0, 
-        "name": "主页", 
+        "name": "首页", 
         "bg": "./static/img/caseBanner_1.jpg", 
         "bannerWord_1": "全效净化服务", 
         "bannerWord_2": "安全全面的健康保护", 
@@ -9,7 +9,7 @@
     },
     {
         "id": 1, 
-        "name": "关于弘辉量子", 
+        "name": "弘辉量子", 
         "bg": "./static/img/usBanner_1.jpg", 
         "bannerWord_1": "关于弘辉量子", 
         "bannerWord_2": "我们致力于为家庭和社会提供健康人居环境咨询服务与行业综合", 
@@ -17,7 +17,7 @@
     },
     {
         "id": 2, 
-        "name": "核心技术", 
+        "name": "产品序列", 
         "bg": "./static/img/techBanner_1.jpg", 
         "bannerWord_1": "核心技术", 
         "bannerWord_2": "我们专注于研发最好的产品，为您创造", 

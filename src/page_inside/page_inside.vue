@@ -30,7 +30,11 @@ export default {
         getData: function() {
             this.axios.get('./static/data.json').then((response) => {
                 this.pageInfos = response.data
-                this.pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
+                if (sessionStorage.getItem("pageIndex") === null) {
+                    this.pageIndex = 0
+                } else {
+                    this.pageIndex = parseInt(sessionStorage.getItem("pageIndex"))
+                }
             })
         },
         watchScroll: function() {

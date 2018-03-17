@@ -39,7 +39,7 @@ export default {
                 word_1: '您的生活安全正受到威胁', 
                 word_2: '请联系我们', 
                 word_3: '4000-328-806',
-                word_4: 'huoyan@honghui.com'
+                word_4: 'leo.huo@hhquantum.com'
             }
         }
     },

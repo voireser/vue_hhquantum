@@ -19,9 +19,9 @@ export default {
     data: function() {
         return { 
             footerInfo: {
-                word_1: '北京市朝阳区大裤衩档底下13L-1101', 
+                word_1: '北京市朝阳区北苑路170号4号楼3层（大屯孵化器A1004号）', 
                 word_2: '4000-328-806', 
-                word_3: 'huoyan@honghui.com',
+                word_3: 'leo.huo@hhquantum.com',
                 word_4: 'Copyright © 2018 Hong Hui Quantum. All Rights Reserved.'
             }
         }

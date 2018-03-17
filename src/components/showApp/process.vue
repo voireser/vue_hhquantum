@@ -24,7 +24,8 @@ export default {
                 { id: 1, icon: '&#xe64a;', word_1: '上门检测', word_2: '服务监理上门检测、量房<br>对室内空气污染进行评估' },
                 { id: 2, icon: '&#xe644;', word_1: '制定方案', word_2: '工程师根据评估结果制定<br>治理方案' },
                 { id: 3, icon: '&#xe63e;', word_1: '上门施工', word_2: '专业服务团队上门施工<br>执行360度全屋净化标准' },
-                { id: 4, icon: '&#xe641;', word_1: '验收', word_2: '监理陪同客户进行项目验收<br>两周后上门复检' }
+                { id: 4, icon: '&#xe641;', word_1: '验收', word_2: '监理陪同客户进行项目验收<br>两周后上门复检' },
+                { id: 5, icon: '&#xe637;', word_1: '服务后事项', word_2: '如检验产品效果，建议第三方正规CMA检测，如无降低<br><span class="textMark">全额退款</span>' }
             ],
             scrollTo: 0
         }
@@ -48,6 +49,9 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-    
+<style lang="stylus">
+    .textMark{
+        margin: 0.1rem 0 0 0 !important;
+        color: #078cdc !important;
+    }
 </style>

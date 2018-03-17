@@ -26,7 +26,7 @@
                     <img class="img-responsive" :src="caseInfo.titlePic">
                     <p>{{caseInfo.title}}</p>
                     <p>
-                        {{caseInfo.class === 'build' ? '总治理面积：' : '车辆类型：'}}
+                        {{caseInfo.class === 'car' ? '车辆类型：' : '总治理面积：'}}
                         <span v-html="caseInfo.result"></span>
                     </p>
                 </a>

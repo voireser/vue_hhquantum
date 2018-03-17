@@ -1,110 +1,188 @@
-[
-    {
-        "id": 1,
-        "class": "build",
-        "area": ["北京", "广州", "上海", "深圳"],
-        "titlePic": "./static/img/case/title_1.jpg",
-        "title": "特斯拉TESLA办公区空气综合治理",
-        "result": "4,000㎡",
-        "picUrl": ["./static/img/case/beijing_1_1.jpg", "./static/img/case/beijing_1_2.jpg", "./static/img/case/beijing_1_3.jpg", "./static/img/case/beijing_1_4.jpg", "./static/img/case/beijing_1_5.jpg", "./static/img/case/beijing_1_6.jpg", "./static/img/case/beijing_1_7.jpg", "./static/img/case/beijing_1_8.jpg"]
-    },
-    {
-        "id": 2,
-        "class": "build",
-        "area": ["北京", "广州", "上海", "深圳"],
-        "titlePic": "./static/img/case/title_2.jpg",
-        "title": "TESLA展示厅空气综合治理",
-        "result": "500㎡",
-        "picUrl": ["./static/img/case/beijing_2_1.jpg", "./static/img/case/beijing_2_2.jpg", "./static/img/case/beijing_2_3.jpg"]
-    },
-    {
-        "id": 3,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_3.jpg",
-        "title": "国家电网顺义调度中心空气综合治理",
-        "result": "300㎡",
-        "picUrl": ["./static/img/case/beijing_3_1.jpg", "./static/img/case/beijing_3_2.jpg", "./static/img/case/beijing_3_3.jpg", "./static/img/case/beijing_3_4.jpg"]
-    },
-    {
-        "id": 4,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_4.jpg",
-        "title": "格拉斯小镇别墅室内空气综合治理",
-        "result": "1,500㎡",
-        "picUrl": ["./static/img/case/beijing_4_1.jpg", "./static/img/case/beijing_4_2.jpg", "./static/img/case/beijing_4_3.jpg", "./static/img/case/beijing_4_4.jpg", "./static/img/case/beijing_4_5.jpg"]
-    },
-    {
-        "id": 5,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_5.jpg",
-        "title": "海晟名苑住宅室内空气综合治理",
-        "result": "300㎡",
-        "picUrl": ["./static/img/case/beijing_5_1.jpg", "./static/img/case/beijing_5_2.jpg", "./static/img/case/beijing_5_3.jpg", "./static/img/case/beijing_5_4.jpg", "./static/img/case/beijing_5_5.jpg", "./static/img/case/beijing_5_6.jpg"]
-    },
-    {
-        "id": 6,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_6.jpg",
-        "title": "AnRic幼儿园空气综合治理",
-        "result": "500㎡",
-        "picUrl": ["./static/img/case/beijing_6_1.jpg", "./static/img/case/beijing_6_2.jpg", "./static/img/case/beijing_6_3.jpg", "./static/img/case/beijing_6_4.jpg", "./static/img/case/beijing_6_5.jpg", "./static/img/case/beijing_6_6.jpg", "./static/img/case/beijing_6_7.jpg"]
-    },
-    {
-        "id": 7,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_7.jpg",
-        "title": "佳汇国际中心室内空气综合治理",
-        "result": "1,200㎡",
-        "picUrl": ["./static/img/case/beijing_7_1.jpg", "./static/img/case/beijing_7_2.jpg", "./static/img/case/beijing_7_3.jpg"]
-    },
-    {
-        "id": 8,
-        "class": "build",
-        "area": ["北京"],
-        "titlePic": "./static/img/case/title_8.jpg",
-        "title": "神华集团创新研究院公寓楼",
-        "result": "2,500㎡",
-        "picUrl": ["./static/img/case/beijing_8_1.jpg", "./static/img/case/beijing_8_2.jpg", "./static/img/case/beijing_8_3.jpg"]
-    },
-    {
-        "id": 9,
-        "class": "car",
-        "area": ["北京", "汽车"],
-        "titlePic": "./static/img/case/title_9.jpg",
-        "title": "车内施工",
-        "result": "奔驰",
-        "picUrl": ["./static/img/case/car_9_1.jpg", "./static/img/case/car_9_2.jpg", "./static/img/case/car_9_3.jpg"]
-    },
-    {
-        "id": 10,
-        "class": "car",
-        "area": ["北京", "汽车"],
-        "titlePic": "./static/img/case/title_10.jpg",
-        "title": "车内施工",
-        "result": "雷克萨斯",
-        "picUrl": ["./static/img/case/car_10_1.jpg", "./static/img/case/car_10_2.jpg", "./static/img/case/car_10_3.jpg"]
-    },
-    {
-        "id": 11,
-        "class": "car",
-        "area": ["北京", "汽车"],
-        "titlePic": "./static/img/case/title_11.jpg",
-        "title": "车内施工",
-        "result": "福特",
-        "picUrl": ["./static/img/case/car_11_1.jpg", "./static/img/case/car_11_2.jpg", "./static/img/case/car_11_3.jpg", "./static/img/case/car_11_4.jpg"]
-    },
-    {
-        "id": 12,
-        "class": "car",
-        "area": ["北京", "汽车"],
-        "titlePic": "./static/img/case/title_12.jpg",
-        "title": "车内施工",
-        "result": "斯巴鲁",
-        "picUrl": ["./static/img/case/car_12_1.jpg", "./static/img/case/car_12_2.jpg", "./static/img/case/car_12_3.jpg"]
-    }
+[ 
+    { "id": 1, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_tesla/title.jpg", "title": "北京特斯拉总部办公楼", "result": "7,000㎡", "picUrl": 
+        ["./static/img/case/BJ_office_tesla/1.jpg",
+            "./static/img/case/BJ_office_tesla/2.jpg",
+            "./static/img/case/BJ_office_tesla/3.jpg",
+            "./static/img/case/BJ_office_tesla/4.jpg",
+            "./static/img/case/BJ_office_tesla/5.jpg"] }, 
+    { "id": 2, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/GZ_office_tesla/title.jpg", "title": "广州特斯拉", "result": "240㎡", "picUrl": 
+        ["./static/img/case/GZ_office_tesla/1.jpg",
+            "./static/img/case/GZ_office_tesla/2.jpg",
+            "./static/img/case/GZ_office_tesla/3.jpg",
+            "./static/img/case/GZ_office_tesla/4.jpg"] }, 
+    { "id": 3, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/SH_office_tesla/title.jpg", "title": "上海特斯拉", "result": "3,000㎡", "picUrl": 
+        ["./static/img/case/SH_office_tesla/1.jpg",
+            "./static/img/case/SH_office_tesla/2.jpg",
+            "./static/img/case/SH_office_tesla/3.jpg",
+            "./static/img/case/SH_office_tesla/4.jpg",
+            "./static/img/case/SH_office_tesla/5.jpg",
+            "./static/img/case/SH_office_tesla/6.jpg",
+            "./static/img/case/SH_office_tesla/7.jpg",
+            "./static/img/case/SH_office_tesla/8.jpg",
+            "./static/img/case/SH_office_tesla/9.jpg"] }, 
+    { "id": 4, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/SZ_office_tesla/title.jpg", "title": "深圳特斯拉", "result": "360㎡", "picUrl": 
+        ["./static/img/case/SZ_office_tesla/1.jpg",
+            "./static/img/case/SZ_office_tesla/2.jpg",
+            "./static/img/case/SZ_office_tesla/3.jpg",
+            "./static/img/case/SZ_office_tesla/4.jpg"] }, 
+    { "id": 5, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_teslaShow/title.jpg", "title": "北京特斯拉展厅", "result": "450㎡", "picUrl": 
+        ["./static/img/case/BJ_office_teslaShow/1.jpg",
+            "./static/img/case/BJ_office_teslaShow/2.jpg",
+            "./static/img/case/BJ_office_teslaShow/3.jpg",
+            "./static/img/case/BJ_office_teslaShow/4.jpg"] }, 
+    { "id": 6, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_electric/title.jpg", "title": "国家电网", "result": "900㎡", "picUrl": 
+        ["./static/img/case/BJ_office_electric/1.jpg",
+            "./static/img/case/BJ_office_electric/2.jpg",
+            "./static/img/case/BJ_office_electric/3.jpg",
+            "./static/img/case/BJ_office_electric/4.jpg",
+            "./static/img/case/BJ_office_electric/5.jpg",
+            "./static/img/case/BJ_office_electric/6.jpg"] }, 
+    { "id": 7, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_huanqiu/title.jpg", "title": "环球贸易中心", "result": "1,500㎡", "picUrl": 
+        ["./static/img/case/BJ_office_huanqiu/1.jpg",
+            "./static/img/case/BJ_office_huanqiu/2.jpg",
+            "./static/img/case/BJ_office_huanqiu/3.jpg",
+            "./static/img/case/BJ_office_huanqiu/4.jpg"] }, 
+    { "id": 8, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_jiahui/title.jpg", "title": "佳汇国际中心", "result": "1,500㎡", "picUrl": 
+        ["./static/img/case/BJ_office_jiahui/1.jpg",
+            "./static/img/case/BJ_office_jiahui/2.jpg",
+            "./static/img/case/BJ_office_jiahui/3.jpg",
+            "./static/img/case/BJ_office_jiahui/4.jpg"] }, 
+    { "id": 9, "class": "office", "area": ["办公类"], "titlePic": "./static/img/case/BJ_office_runcheng/title.jpg", "title": "润城中心", "result": "3,600㎡", "picUrl": 
+        ["./static/img/case/BJ_office_runcheng/1.jpg",
+            "./static/img/case/BJ_office_runcheng/2.jpg",
+            "./static/img/case/BJ_office_runcheng/3.jpg",
+            "./static/img/case/BJ_office_runcheng/4.jpg",
+            "./static/img/case/BJ_office_runcheng/5.jpg"] }, 
+    { "id": 10, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_child_anyang/title.jpg", "title": "安杨幼儿园", "result": "1,600㎡", "picUrl": 
+        ["./static/img/case/BJ_child_anyang/1.jpg", 
+            "./static/img/case/BJ_child_anyang/2.jpg", 
+            "./static/img/case/BJ_child_anyang/3.jpg", 
+            "./static/img/case/BJ_child_anyang/4.jpg", 
+            "./static/img/case/BJ_child_anyang/5.jpg", 
+            "./static/img/case/BJ_child_anyang/6.jpg"] },
+    { "id": 11, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/YC_child/title.jpg", "title": "银川幼儿园", "result": "5,500㎡", "picUrl": 
+        ["./static/img/case/YC_child/1.jpg",
+            "./static/img/case/YC_child/2.jpg",
+            "./static/img/case/YC_child/3.jpg",
+            "./static/img/case/YC_child/4.jpg",
+            "./static/img/case/YC_child/5.jpg",
+            "./static/img/case/YC_child/6.jpg"] },
+    { "id": 12, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_shenhua/title.jpg", "title": "神华公寓楼", "result": "7,500㎡", "picUrl": 
+        ["./static/img/case/BJ_live_shenhua/1.jpg",
+            "./static/img/case/BJ_live_shenhua/2.jpg",
+            "./static/img/case/BJ_live_shenhua/3.jpg",
+            "./static/img/case/BJ_live_shenhua/4.jpg",
+            "./static/img/case/BJ_live_shenhua/5.jpg"] },
+    { "id": 13, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_glass/title.jpg", "title": "格拉斯小镇别墅", "result": "500㎡", "picUrl": 
+        ["./static/img/case/BJ_live_glass/1.jpg", 
+            "./static/img/case/BJ_live_glass/2.jpg", 
+            "./static/img/case/BJ_live_glass/3.jpg", 
+            "./static/img/case/BJ_live_glass/4.jpg", 
+            "./static/img/case/BJ_live_glass/5.jpg", 
+            "./static/img/case/BJ_live_glass/6.jpg"] },
+    { "id": 14, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_guofengmeitang/title.jpg", "title": "国风美唐", "result": "160㎡", "picUrl": 
+        ["./static/img/case/BJ_live_guofengmeitang/1.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/2.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/3.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/4.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/5.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/6.jpg", 
+            "./static/img/case/BJ_live_guofengmeitang/7.jpg"] },
+    { "id": 15, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_haishengmingyuan/title.jpg", "title": "海晟名苑", "result": "150㎡", "picUrl": 
+        ["./static/img/case/BJ_live_haishengmingyuan/1.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/2.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/3.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/4.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/5.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/6.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/7.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/8.jpg", 
+            "./static/img/case/BJ_live_haishengmingyuan/9.jpg"] },
+    { "id": 16, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_jingtieheyuan/title.jpg", "title": "京铁和园", "result": "70㎡", "picUrl": 
+        ["./static/img/case/BJ_live_jingtieheyuan/1.jpg", 
+            "./static/img/case/BJ_live_jingtieheyuan/2.jpg", 
+            "./static/img/case/BJ_live_jingtieheyuan/3.jpg"] },
+    { "id": 17, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_jinshimeiyuan/title.jpg", "title": "金石美苑", "result": "60㎡", "picUrl": 
+        ["./static/img/case/BJ_live_jinshimeiyuan/1.jpg", 
+            "./static/img/case/BJ_live_jinshimeiyuan/2.jpg", 
+            "./static/img/case/BJ_live_jinshimeiyuan/3.jpg", 
+            "./static/img/case/BJ_live_jinshimeiyuan/4.jpg"] },
+    { "id": 18, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_junan/title.jpg", "title": "君安国际", "result": "160㎡", "picUrl": 
+        ["./static/img/case/BJ_live_junan/1.jpg", 
+            "./static/img/case/BJ_live_junan/2.jpg", 
+            "./static/img/case/BJ_live_junan/3.jpg"] },
+    { "id": 19, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_kaiyangli_4/title.jpg", "title": "开阳里四区", "result": "120㎡", "picUrl": 
+        ["./static/img/case/BJ_live_kaiyangli_4/1.jpg", 
+            "./static/img/case/BJ_live_kaiyangli_4/2.jpg", 
+            "./static/img/case/BJ_live_kaiyangli_4/3.jpg", 
+            "./static/img/case/BJ_live_kaiyangli_4/4.jpg", 
+            "./static/img/case/BJ_live_kaiyangli_4/5.jpg", 
+            "./static/img/case/BJ_live_kaiyangli_4/6.jpg"] },
+    { "id": 20, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_meilifang/title.jpg", "title": "美立方", "result": "60㎡", "picUrl": 
+        ["./static/img/case/BJ_live_meilifang/1.jpg",
+            "./static/img/case/BJ_live_meilifang/2.jpg",
+            "./static/img/case/BJ_live_meilifang/3.jpg",
+            "./static/img/case/BJ_live_meilifang/4.jpg",
+            "./static/img/case/BJ_live_meilifang/5.jpg"] },
+    { "id": 21, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_sanhuqiao_12/title.jpg", "title": "三虎桥南路12号院", "result": "60㎡", "picUrl": 
+        ["./static/img/case/BJ_live_sanhuqiao_12/1.jpg",
+            "./static/img/case/BJ_live_sanhuqiao_12/2.jpg",
+            "./static/img/case/BJ_live_sanhuqiao_12/3.jpg",
+            "./static/img/case/BJ_live_sanhuqiao_12/4.jpg"] },
+    { "id": 22, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_shangpintaihu/title.jpg", "title": "尚品台湖", "result": "110㎡", "picUrl": 
+        ["./static/img/case/BJ_live_shangpintaihu/1.jpg",
+            "./static/img/case/BJ_live_shangpintaihu/2.jpg",
+            "./static/img/case/BJ_live_shangpintaihu/3.jpg",
+            "./static/img/case/BJ_live_shangpintaihu/4.jpg"] },
+    { "id": 23, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_yangqiao_73/title.jpg", "title": "洋桥73号院", "result": "180㎡", "picUrl": 
+        ["./static/img/case/BJ_live_yangqiao_73/1.jpg",
+            "./static/img/case/BJ_live_yangqiao_73/2.jpg",
+            "./static/img/case/BJ_live_yangqiao_73/3.jpg",
+            "./static/img/case/BJ_live_yangqiao_73/4.jpg",
+            "./static/img/case/BJ_live_yangqiao_73/5.jpg"] },
+    { "id": 24, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_yuejingtai/title.jpg", "title": "金地悦景台", "result": "110㎡", "picUrl": 
+        ["./static/img/case/BJ_live_yuejingtai/1.jpg",
+            "./static/img/case/BJ_live_yuejingtai/2.jpg",
+            "./static/img/case/BJ_live_yuejingtai/3.jpg",
+            "./static/img/case/BJ_live_yuejingtai/4.jpg",
+            "./static/img/case/BJ_live_yuejingtai/5.jpg",
+            "./static/img/case/BJ_live_yuejingtai/6.jpg"] },
+    { "id": 25, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_zhonghaibogong/title.jpg", "title": "中海铂宫", "result": "800㎡", "picUrl": 
+        ["./static/img/case/BJ_live_zhonghaibogong/1.jpg",
+            "./static/img/case/BJ_live_zhonghaibogong/2.jpg",
+            "./static/img/case/BJ_live_zhonghaibogong/3.jpg",
+            "./static/img/case/BJ_live_zhonghaibogong/4.jpg",
+            "./static/img/case/BJ_live_zhonghaibogong/5.jpg"] },
+    { "id": 26, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/BJ_live_zifangyuan/title.jpg", "title": "紫芳园", "result": "100㎡", "picUrl": 
+        ["./static/img/case/BJ_live_zifangyuan/1.jpg",
+            "./static/img/case/BJ_live_zifangyuan/2.jpg",
+            "./static/img/case/BJ_live_zifangyuan/3.jpg",
+            "./static/img/case/BJ_live_zifangyuan/4.jpg"] },
+    { "id": 27, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/TJ_live_yichengtangting/title.jpg", "title": "天津亿城堂庭", "result": "150㎡", "picUrl": 
+        ["./static/img/case/TJ_live_yichengtangting/1.jpg",
+            "./static/img/case/TJ_live_yichengtangting/2.jpg",
+            "./static/img/case/TJ_live_yichengtangting/3.jpg"] },
+    { "id": 28, "class": "live", "area": ["生活类"], "titlePic": "./static/img/case/WH_live_chutianfu/title.jpg", "title": "武汉楚天府", "result": "100㎡", "picUrl": 
+        ["./static/img/case/WH_live_chutianfu/1.jpg",
+            "./static/img/case/WH_live_chutianfu/2.jpg",
+            "./static/img/case/WH_live_chutianfu/3.jpg",
+            "./static/img/case/WH_live_chutianfu/4.jpg",
+            "./static/img/case/WH_live_chutianfu/5.jpg"] },
+    { "id": 29, "class": "car", "area": ["车辆类"], "titlePic": "./static/img/case/C_benz/title.jpg", "title": "车内施工", "result": "奔驰", "picUrl": 
+        ["./static/img/case/C_benz/1.jpg", 
+            "./static/img/case/C_benz/2.jpg", 
+            "./static/img/case/C_benz/3.jpg"] }, 
+    { "id": 30, "class": "car", "area": ["车辆类"], "titlePic": "./static/img/case/C_BMW_MINI/title.jpg", "title": "车内施工", "result": "宝马MINI", "picUrl": 
+        ["./static/img/case/C_BMW_MINI/1.jpg", 
+            "./static/img/case/C_BMW_MINI/2.jpg", 
+            "./static/img/case/C_BMW_MINI/3.jpg"] }, 
+    { "id": 31, "class": "car", "area": ["车辆类"], "titlePic": "./static/img/case/C_lexus/title.jpg", "title": "车内施工", "result": "雷克萨斯", "picUrl": 
+        ["./static/img/case/C_lexus/1.jpg", 
+            "./static/img/case/C_lexus/2.jpg", 
+            "./static/img/case/C_lexus/3.jpg", 
+            "./static/img/case/C_lexus/4.jpg"] }, 
+    { "id": 32, "class": "car", "area": ["车辆类"], "titlePic": "./static/img/case/C_porche/title.jpg", "title": "车内施工", "result": "保时捷", "picUrl": 
+        ["./static/img/case/C_porche/1.jpg", 
+            "./static/img/case/C_porche/2.jpg", 
+            "./static/img/case/C_porche/3.jpg"] }
 ]
