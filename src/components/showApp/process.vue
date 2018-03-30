@@ -3,7 +3,7 @@
         <p v-for="process in processes" :key="process.id">
             <i class="iconfont right" v-html="process.icon"></i>
             <span>{{process.word_1}}</span>
-            <span v-html="process.word_2">网上下单<br>或者拨打400电话</span>
+            <span v-html="process.word_2">网上下单<br>或者拨打电话</span>
             <span class="triangle" v-if="process.id !== 0"></span>
         </p>
     </div>
@@ -20,7 +20,7 @@ export default {
     data: function() {
         return {
             processes: [
-                { id: 0, icon: '&#xe64e;', word_1: '预约服务', word_2: '网上下单<br>或者拨打400电话' },
+                { id: 0, icon: '&#xe64e;', word_1: '预约服务', word_2: '网上下单<br>或者拨打电话' },
                 { id: 1, icon: '&#xe64a;', word_1: '上门检测', word_2: '服务监理上门检测、量房<br>对室内空气污染进行评估' },
                 { id: 2, icon: '&#xe644;', word_1: '制定方案', word_2: '工程师根据评估结果制定<br>治理方案' },
                 { id: 3, icon: '&#xe63e;', word_1: '上门施工', word_2: '专业服务团队上门施工<br>执行360度全屋净化标准' },

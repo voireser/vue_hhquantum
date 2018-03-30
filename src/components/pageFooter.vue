@@ -20,7 +20,7 @@ export default {
         return { 
             footerInfo: {
                 word_1: '北京市朝阳区北苑路170号4号楼3层（大屯孵化器A1004号）', 
-                word_2: '4000-328-806', 
+                word_2: '010-80826932', 
                 word_3: 'leo.huo@hhquantum.com',
                 word_4: 'Copyright © 2018 Hong Hui Quantum. All Rights Reserved.'
             }
